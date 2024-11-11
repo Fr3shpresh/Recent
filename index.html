@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Book</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>My Recipe Book</h1>
+
+        <!-- Search Bar -->
+        <input type="text" id="searchBar" placeholder="Search by title or ingredient" onkeyup="filterRecipes()">
+
+        <!-- Recipe List Section -->
+        <div id="recipe-list" class="recipe-list">
+            <!-- Recipes will be dynamically added here -->
+        </div>
+
+        <!-- Add Recipe Form -->
+        <div class="form-container">
+            <h2>Add a New Recipe</h2>
+            <form id="recipe-form">
+                <input type="text" id="title" placeholder="Recipe Title" required><br>
+                <input type="text" id="image" placeholder="Image URL"><br>
+                <textarea id="description" placeholder="Short Description" required></textarea><br>
+                <textarea id="ingredients" placeholder="Ingredients (comma-separated)" required></textarea><br>
+                <textarea id="instructions" placeholder="Instructions" required></textarea><br>
+                <button type="submit">Add Recipe</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
